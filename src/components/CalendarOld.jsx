@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import dateFns from 'date-fns';
 
-export default class Calendar extends Component {
+export default class CalendarOld extends Component {
   constructor(props) {
     super(props);
 
