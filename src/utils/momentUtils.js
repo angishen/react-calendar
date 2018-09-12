@@ -1,8 +1,15 @@
 import moment from 'moment';
 
+export function isSameDay(a, b) {
+  if (!moment(a) || !moment(b)) return false;
+  return (
+    a.date() === b.date() && a.month() === b.month() && a.year() === b.year()
+  );
+}
+
 export function isPrevMonth(a, b) {
   if (!moment.isMoment(a) || !moment.isMoment(b)) return False;
-  return isSameMoment(a.clone())
+  return isSameMoment(a.clone());
 }
 
 export function isNextMonth(a, b) {

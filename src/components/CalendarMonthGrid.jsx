@@ -1,5 +1,6 @@
-import { Component } from 'react';
+import React, { Component } from 'react';
 import moment from 'moment/moment';
+import PropTypes from 'prop-types';
 import momentPropTypes from 'react-moment-proptypes';
 import { isPrevMonth, isNextMonth } from '../utils/momentUtils';
 
@@ -14,7 +15,7 @@ const defaultProps = {
   numberOfMonths: 1,
   onDayClick() {},
   onMonthChange() {},
-  onYearChange() {},
+  onYearChange() {}
 };
 
 function getMonths(initialMonth, numberOfMonths) {
